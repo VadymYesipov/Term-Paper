@@ -1,0 +1,11 @@
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (12, 1, 21, 1, 1, 'Super fast.', 100, 2, 1, 1);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (13, 2, 22, 2, 2, 'Pretty convenient.', 200, 1, 2, 2);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (14, 3, 23, 3, 3, null, 70, 3, 3, 3);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (15, 4, 22, 4, 4, null, 90, 2, 4, 4);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (16, 5, 23, 4, 5, null, 100, 2, 5, 5);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (17, 6, 24, 4, 6, 'Very popular.', 123.4, 1, 6, 6);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (18, 7, 24, 3, 7, null, 130, 1, 7, 7);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (19, 8, 25, 1, 8, 'Expensive choice.', 78.5, 3, 8, 8);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (20, 9, 26, 2, 9, null, 110, 2, 9, 9);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (21, 10, 27, 3, 10, 'Cool :)', 99.5, 2, 10, 10);
+INSERT INTO service.roller_skates (id, product_id, brand_id, fixation_id, foot_size_id, description, price, quality_id, image_id, color_id) VALUES (22, 11, 28, 1, 11, null, 50, 4, 11, 1);
