@@ -7,17 +7,27 @@ import {MaterialModule} from './material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {ImageModalComponent} from "./imageModal/imageModal.component";
+import {CovalentFileModule, CovalentLayoutModule, CovalentStepsModule} from "@covalent/core";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ImageModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    CovalentLayoutModule,
+    CovalentStepsModule,
+    CovalentFileModule,
     MaterialModule
+  ],
+  entryComponents: [
+    AppComponent,
+    ImageModalComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -43,6 +43,7 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   exports: [
@@ -70,6 +71,8 @@ import {
     MatListModule,
     MatMenuModule,
     MatNativeDateModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatPaginatorModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,

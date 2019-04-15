@@ -5,20 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "bicycle")
-public class BicycleEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    @OneToOne//(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "product_id", nullable = false)
-    private ProductEntity product;
+public class BicycleEntity extends ProductEntity {
 
     @ManyToOne
     @JoinColumn(name = "age_category_id")
@@ -36,27 +29,10 @@ public class BicycleEntity {
     @JoinColumn(name = "speed_amount_id")
     private SpeedAmountEntity speedAmount;
 
-    private String description;
-
     @ManyToOne
-    @JoinColumn(name = "bicycle_category_id")
+    @JoinColumn(name = "bicycle_category_id", insertable = false, updatable = false)
     private BicycleCategoryEntity bicycleCategory;
 
-    @ManyToOne
-    @JoinColumn(name = "brand_id")
-    private BrandEntity brand;
-
-    private Double price;
-
-    @ManyToOne
-    @JoinColumn(name = "quality_id")
-    private QualityEntity quality;
-
-    @ManyToOne
-    @JoinColumn(name = "image_id")
-    private ImageEntity image;
-
-    @ManyToOne
-    @JoinColumn(name = "color_id")
-    private ColorEntity color;
+    //    @OneToMany
+//    private List<ImageEntity> images;
 }

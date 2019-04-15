@@ -1,9 +1,9 @@
 package com.aimprosoft.yesipov.persistence.entity;
 
 import lombok.*;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -17,9 +17,9 @@ public class ImageEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Lob
-    @Basic(fetch = FetchType.LAZY)
-    private byte[] image;
+//    @Lob
+//    @Basic(fetch = FetchType.LAZY)
+    private String image;
 
 //    @OneToMany(mappedBy = "image")
 //    private List<BicycleEntity> bicycles;

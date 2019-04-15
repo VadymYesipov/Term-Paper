@@ -1,28 +1,38 @@
 package com.aimprosoft.yesipov.persistence.entity;
 
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
+@MappedSuperclass
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-//@EqualsAndHashCode(exclude = {"bicycle"})
-//@ToString(exclude = "bicycle")
-@Entity(name = "product")
 public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "product_id")
-    private Long productId;
+    @Column(name = "id")
+    private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "product_type_id")
-    private ProductTypeEntity productType;
+    private String description;
+
+    private double price;
 
     private Boolean isAvailable;
 
-//    @OneToOne(mappedBy = "product")//fetch = FetchType.LAZY, cascade =  CascadeType.ALL,
-//    private BicycleEntity bicycle;
+    @ManyToOne
+    @JoinColumn(name = "brand_id")
+    private BrandEntity brand;
+
+    @ManyToOne
+    @JoinColumn(name = "quality_id")
+    private QualityEntity quality;
+
+    @ManyToOne
+    @JoinColumn(name = "image_id")
+    private ImageEntity image;
+
+    @ManyToOne
+    @JoinColumn(name = "color_id")
+    private ColorEntity color;
 }
